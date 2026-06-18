@@ -1,0 +1,16 @@
+/* Variables Globales */
+$bg-color: rgba(30, 30, 30, 0.6);
+$border-color: rgba(255, 255, 255, 0.2);
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.main_container {
+  background: "#C24242";
+}
+
+/* Importacion de modulos */
+@import 'modules/player/player_audio.scss';
+

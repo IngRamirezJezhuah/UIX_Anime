@@ -1,0 +1,28 @@
+;;====================================
+;; Importaciones de las vistas
+;;====================================
+
+(include "./modules/player/player_audio.yuck")
+;;(include "./modules/visualizer/visualizer.eww")
+;; aqui añado mas includes conforme avanzo:
+
+(defwindow main_window
+    :monitor 0
+    :geometry (geometry :x "0%"
+                        :y "0%"
+                        :width "70%"
+                        :height "70%"
+                        :anchor "center")
+    :stacking "bottom"
+    :windowtype "desktop"
+    :wm-ignore true
+
+    (main_box))
+
+  (defwidget main_box []
+      (box :class "main_container" :orientation "v" :space-evenly false
+        (player_widget) ;; llamada al modulo que defino abajo
+      ))
+
+
+

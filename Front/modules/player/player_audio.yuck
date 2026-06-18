@@ -1,0 +1,10 @@
+;; Modulo de media player
+(defwidget player_widget []
+  (box  :class "player-box"
+        :orientation "h"
+        :space-evenly false
+        :halign "center"
+        :valing "center"
+        (label :text "Mouslo Reproductor Activado" :class "player-text")
+  ))
+

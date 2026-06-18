@@ -1,9 +1,0 @@
-;;====================================
-;; Importaciones de las vistas
-;;====================================
-
-(include ".modules/player/player_audio.eww")
-(include "./modules/visualizer/visualizer.eww")
-;; .. etc
-
-
