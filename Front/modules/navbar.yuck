@@ -2,9 +2,12 @@
     (box :class "navbar-container" :orientation "v" :space-evenly false
         (label :text "" :class "texto")
         (label :text "HOME"   :class "nav-item")
-        (box :orientation "h" :space-evenly false
+        (box :class "bordes" :orientation "h" :space-evenly false
           (label :text "MUSIC"  :class "nav-item" )
           (label :text "󰝚"  :class "texto" ))
+
+        (button :orientation "h" :class "bordes"
+          (label :text "Musica 󰝚"  :class "texto"))
         (label :text "MUSIC"  :class "nav-item" )
         (label :text "CONFIG" :class "nav-item" )   
     ))
