@@ -1,0 +1,10 @@
+(defwidget navbar_widget []
+    (box :class "navbar-container" :orientation "v" :space-evenly false
+        (label :text "" :class "texto")
+        (label :text "HOME"   :class "nav-item")
+        (box :orientation "h" :space-evenly false
+          (label :text "MUSIC"  :class "nav-item" )
+          (label :text "󰝚"  :class "texto" ))
+        (label :text "MUSIC"  :class "nav-item" )
+        (label :text "CONFIG" :class "nav-item" )   
+    ))

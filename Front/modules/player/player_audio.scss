@@ -1,13 +1,13 @@
 /* Modulo de estilos de scss de audio */
-@import '../eww.scss/'
+
 .player-box {
-  background: $bg-color;
-  border: 1px solid $border-color;
+  background: transparent;
+  border: 1px solid "#fff";
   border-radius: 20px;
   /*backdrop-filter: blur(10px);*/
 }
 
 .player-text {
   color: "#C24242";
-  font-size: 20px;
+  font-size: 20rem;
 }

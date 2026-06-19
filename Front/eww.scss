@@ -1,16 +1,28 @@
-/* Variables Globales */
-$bg-color: rgba(30, 30, 30, 0.6);
-$border-color: rgba(255, 255, 255, 0.2);
-
-*{
-  padding: 0;
-  margin: 0;
-}
-
-.main_container {
-  background: "#C24242";
-}
+/* Variables Globales de eww */
 
 /* Importacion de modulos */
-@import 'modules/player/player_audio.scss';
+//@import "./modules/player/player_audio.scss";
+@import "./modules/navbar.scss";
+
+/*
+Tipografias chidas para usar son 
+ArcadeClassic
+Comic Relief
+Electroharmonix
+Espacion
+
+JetBrains Mono N
+
+*/
+
+*{
+  all: unset;
+}
+
+.main-container {
+  /*background-color: #C24242;*/
+  background: #C24242;
+  background: linear-gradient(90deg, rgba(49, 56, 95, 1) 0%,rgba(92, 190, 255, 1) 100%);
+}
+
 
