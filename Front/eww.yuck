@@ -23,6 +23,11 @@
       (box :class "main-container" :orientation "h" :space-evenly false
         (navbar_widget)
         (box :class "content-area" :orientation "v" :space-evenly false
+          (image :path "./assets/heh.png" 
+                 :image-width 999 
+                 :image-height 990
+                 :preserve-aspect-ratio true)
+          (label :text "hola")
           ;;(player_widget) ;; llamada al modulo que defino abajo
        )
     ))
