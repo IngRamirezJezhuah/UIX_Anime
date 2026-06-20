@@ -8,15 +8,15 @@
 .texto {
   font-family: "JetBrains Mono";
   font-size: 15px;
-  color: rgba(167,105,199,100);
+  color: rgba(167, 105, 199, 1);
 }
 
 
 .bordes {
-  margin: 0 32px;
-  padding: 10px;
-  background: rgba(199,105,147,100);
-  border-radius: 15px;
+  margin: 20px 32px;
+  padding: 12px 24px;
+  background: rgba(199, 105, 147, 1);
+  border-radius: 8px;
 }
 
 .nav-item {
@@ -24,3 +24,44 @@
   font-family: "ArcadeClassic, Regular";
   font-size: 18px;
 }
+
+.barras {
+  background: rgba(211, 193, 201, 1);
+  padding: 10px;
+}
+
+.btn {
+  margin: 25px 35px;
+  padding: 15px 24px;
+  background: rgba(92, 192, 255, 0.35);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(99, 102, 241, 0.3);
+
+}
+
+.btn:hover {
+  background: rgba(36,104,150,0.32);
+  color: #fff;
+  border-radius: 8px;
+  /*margin: 20px 32px;*/
+}
+
+.button {
+transition: background-color 0.3s ease;
+}
+.button:hover {
+background-color: blue;
+}
+
+/*
+@keyframes example {
+from {transform: translateY(0);}
+to {transform: translateY(-20px);}
+}
+.element {
+animation: example 0.5s forwards;
+} */

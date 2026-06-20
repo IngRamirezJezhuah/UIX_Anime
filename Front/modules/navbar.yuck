@@ -1,18 +1,20 @@
 (defwidget navbar_widget []
     (box :class "navbar-container" :orientation "v" :space-evenly false
-        (box :class "bordes" :orientation "h" :space-evenly false
-          (label :text "HOME  "   :class "nav-item")
-          ;;(label :text "" :class "texto")
-          )
-        
-        (box :class "bordes" :orientation "h" :space-evenly false
-          (label :text "MUSIC  󰝚"  :class "nav-item" )
-          ;;(label :text " 󰝚 "  :class "texto" )
-          )
 
-        (button :orientation "h" :class "bordes"
+        (box :class "barras" :orientation "v" :space-evenly false)
+
+        (button :class "bordes" :orientation "h" :space-evenly false
+          (label :text "HOME  "   :class "nav-item"))
+
+        (button :orientation "h" :class "btn"  
           (label :text "SETTING "  :class "nav-item"))
         
-        (label :text "MUSIC"  :class "nav-item" )
-        (label :text "CONFIG" :class "nav-item" )   
+        (button :class "btn" :orientation "h" :space-evenly false
+          (label :text "MUSIC  󰝚"  :class "nav-item" ))
+        
+        (button :orientation "h" :class "btn"
+            (label :text "CALEN "  :class "nav-item"))
+
+        (button :class "btn" :orientation "h" :space-evenly false
+          (label :text "HOME  "   :class "nav-item"))  
     ))
