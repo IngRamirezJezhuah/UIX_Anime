@@ -1,0 +1,109 @@
+/* moulos de estilos de navbar */
+
+.navbar-container {
+  background: rgba(49, 56, 95, 0.35); 
+  border-radius: 2rem;
+}
+
+.texto {
+  font-family: "JetBrains Mono";
+  font-size: 15px;
+  color: rgba(167, 105, 199, 1);
+}
+
+.nav-item {
+  margin: 1rem 0;
+  font-family: "ArcadeClassic, Regular";
+  font-size: 18px;
+}
+
+
+.btn {
+  margin: 5px 80px;
+  padding: 15px 24px;
+  background: rgba(92, 192, 255, 0.35);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(99, 102, 241, 0.3);
+  
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background: rgba(36,104,150,0.32);
+  color: #fff;
+  border-radius: 8px;
+  /*margin: 20px 32px;*/
+}
+
+
+/*
+forma correcta de usar el gtk animation
+
+animation: rotate 5s linear infinite;*
+
+@keyframes rotate {
+  from { -gtk-icon-transform: rotate(0deg); }
+  to { -gtk-icon-transform: rotate(360deg); }
+}*/
+
+@keyframes pulso-barra {
+  from {
+    background-color: rgba(22, 153, 166, 0.6);
+  }
+  to {
+    background-color: rgba(22, 153, 166, 1);
+  }
+}
+
+.barras {
+  background: rgba(22, 153, 166, 1);
+  padding: 10px;
+  border-radius: 2rem 0 0 0;
+  animation: pulso-barra 2s ease-in-out infinite alternate;
+}
+
+
+.bordes {
+  margin: 20px 32px; 
+  padding: 12px 24px;
+  background: rgba(199, 105, 147, 0.5);
+  border-radius: 8px;
+  animation: neon-glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon-glow {
+  from {
+    color: rgba(167, 105, 199, 0.5);
+    /* GTK soporta text-shadow básico de manera muy limpia */
+    text-shadow: 0 0 2px rgba(167, 105, 199, 0.2);
+  }
+  to {
+    color: rgba(210, 140, 240, 1);
+    text-shadow: 0 0 8px rgba(167, 105, 199, 0.8);
+  }
+}
+
+.bordes:hover {
+  padding: 13px 15px;
+  background: rgba(199, 104, 147, 1);
+  animation: neon-glow 1.5s ease-in-out infinite alternate;
+  /*background: rgba(36, 104, 150, 0.6);*/
+}
+
+@keyframes fade-entrance {
+  from {
+    background-color: rgba(49, 56, 95, 0);
+  }
+  to {
+    background-color: rgba(49, 56, 95, 0.35);
+  }
+}
+
+/* Se aplica al contenedor principal para que suavice la carga inicial */
+.navbar-container:hover {
+  animation: fade-entrance 1s ease-out
+}

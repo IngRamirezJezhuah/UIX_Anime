@@ -2,7 +2,8 @@
 
 /* Importacion de modulos */
 //@import "./modules/player/player_audio.scss";
-@import "./modules/navbar.scss";
+//@import "./modules/navbar.scss";
+@import "./modules/navbar.css";
 
 /*
 Tipografias chidas para usar son 
@@ -22,7 +23,7 @@ JetBrains Mono N
 .main-container {
   /*background-color: #C24242;*/
   background: #C24242;
-  background: linear-gradient(90deg, rgba(49, 56, 95, 0.35) 0%,rgba(92, 190, 255, 0.35) 100%);
+  background: linear-gradient(90deg, rgba(49, 56, 95, 0.1) 0%,rgba(92, 190, 255, 0.1) 100%);
   border-radius: 2rem;
 }
 

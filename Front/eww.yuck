@@ -10,7 +10,7 @@
     :monitor 0
     :geometry (geometry :x "0%"
                         :y "0%"
-                        :width "70%"
+                        :width "50%"
                         :height "70%"
                         :anchor "center")
     :stacking "bottom"
@@ -29,7 +29,7 @@
                    :image-width 900 
                    :image-height 900
                    :preserve-aspect-ratio true)
-            (label :text "prueba funciona" :haling "center"))
+            (label :text "prueba funciona v.2" :haling "center"))
           ;;(player_widget) ;; llamada al modulo que defino abajo
        )
     ))
