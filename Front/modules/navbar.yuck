@@ -4,20 +4,22 @@
         (box :class "barras" :orientation "v" :space-evenly false)
 
         (button :class "btn" :orientation "h" :space-evenly false
-          (label :text "HOME  "   :class "nav-item"))
+          (label :text ""   :class "nav-item"))
 
         (button :orientation "h" :class "btn"
-          (label :text "SETTING "  :class "nav-item"))
+          (label :text ""  :class "nav-item"))
         
         (button :class "btn" :orientation "h" :space-evenly false
-          (label :text "MUSIC  󰝚"  :class "nav-item" ))
+          (label :text "󰝚" :class "nav-item" ))
         
         (button :orientation "h" :class "btn"
-            (label :text "CALENDAR "  :class "nav-item"))
+            (label :text ""  :class "nav-item"))
+
+        (button :class "navbar-container" :orientation "h" :space-evenly false
+          (label :text ""   :class "nav-item"))
 
         (button :class "bordes" 
           (label :text "text-glow" :class "text-glow"))
 
-        (button :class "navbar-container" :orientation "h" :space-evenly false
-          (label :text "HOME  "   :class "nav-item"))  
+
     ))
