@@ -3,6 +3,10 @@
 
         (box :class "barras" :orientation "v" :space-evenly false)
 
+        ;; Boton player
+        (button :class "btn"
+          (label :text "buscar"))
+
         (button :class "btn" :orientation "h" :space-evenly false
           (label :text ""   :class "nav-item"))
 
@@ -14,12 +18,9 @@
         
         (button :orientation "h" :class "btn"
             (label :text ""  :class "nav-item"))
-
-        (button :class "navbar-container" :orientation "h" :space-evenly false
-          (label :text ""   :class "nav-item"))
-
-        (button :class "bordes" 
-          (label :text "text-glow" :class "text-glow"))
-
+        ;;(button :class "navbar-container" :orientation "h" :space-evenly false
+          ;;(label :text ""   :class "nav-item"))
+        ;;(button :class "bordes" 
+          ;;(label :text "text-glow" :class "text-glow"))
 
     ))
