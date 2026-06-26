@@ -1,10 +1,27 @@
 ;; Modulo de media player
-(defwidget player_widget []
-  (box  :class "player-box"
-        :orientation "h"
-        :space-evenly false
-        :halign "center"
-        :valing "center"
-        (label :text "Modulo Reproductor Activado" :class "player-text")
-  ))
 
+(defwidget player_widget []
+    (box :class "player-container" :orientation "v" :space-evenly false
+      (label :text "Reproductor de musica")
+
+      ;; Controles del reproductor
+      (box :orientation "h" :space-evenly false
+        
+        (button
+               ;; :onclick "player_prev"
+        (label :text "⏮"))
+
+        (button 
+               ;; :onclick "player_toggle"
+        (label :text "⏯" ))
+
+        (button
+               ;; :onclick "player_next"
+        (label :text "⏭"))
+      )
+
+      ;; barra de progreso
+      (box :orientation "h" :space-evenly false
+        (label :text "00:00 / 00:00")
+      )
+    ))

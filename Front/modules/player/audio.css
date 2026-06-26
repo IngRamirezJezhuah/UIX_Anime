@@ -1,0 +1,74 @@
+/* Modulo de estilos de scss de audio */
+
+.player-container {
+  background: rgba(49,56,95, 1);
+  border-radius: 15px;
+  padding: 15px;
+  margin: 10px 0;
+}
+
+/*
+.module-header {
+  font-family: "JetBrains Mono";
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+*/
+
+/*
+.player-controls {
+  /*
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 15px 0;
+}
+*/
+
+/*
+.control-btn {
+  background: rgba(92,192,255,0.35);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+
+   display: flex;
+  justify-conten: center;
+  cursor: pointer;
+  
+  transition: all 0.3s ease;
+}
+*/
+
+/*
+.control-btn:hover {
+  background: rgba(36, 104, 150, 0.6);
+  
+ transform:scale(1.1);
+   
+}
+*/
+/*
+.control-icon {
+  font-size: 16px;
+  color: #fff;
+}
+*/
+/*
+.progress-bar {
+  margin-top: 10px;
+  padding: 5px;
+  background: rgba(255, 255, 255,0.1);
+  border-radius: 10px;
+}
+*/
+
+/*
+.progress-text {
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+}
+*/

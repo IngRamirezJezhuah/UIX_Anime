@@ -3,7 +3,7 @@
 ;;====================================
 
 (include "./modules/navbar.yuck")
-;;(include "./modules/player/player_audio.yuck")
+(include "./modules/player/player_audio.yuck")
 ;; aqui añado mas includes conforme avanzo:
 
 (defwindow main_window
@@ -29,8 +29,19 @@
                    :image-width 900 
                    :image-height 900
                    :preserve-aspect-ratio true)
-            (label :text "prueba funciona v.2" :haling "center"))
-          ;;(player_widget) ;; llamada al modulo que defino abajo
+            
+            (label :text "prueba funciona v.3" :haling "center")
+
+          (box       :orientation "v" :space-evenly false
+            (box     :orientation "v"
+              (label :text "contenido activo")
+              ;; aqui se mostraran los modulos segun el boton
+              (player_widget)
+              )
+            )
+          )
+          ;; Area de contenido Dinamico
+          
        )
     ))
 
