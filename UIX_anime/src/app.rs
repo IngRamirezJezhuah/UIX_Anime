@@ -18,6 +18,7 @@ struct GreetArgs<'a> {
 
 #[component]
 pub fn App() -> impl IntoView {
+    /*
     let (name, set_name) = signal(String::new());
     let (greet_msg, set_greet_msg) = signal(String::new());
 
@@ -25,7 +26,7 @@ pub fn App() -> impl IntoView {
         let v = event_target_value(&ev);
         set_name.set(v);
     };
-
+    
     let greet = move |ev: SubmitEvent| {
         ev.prevent_default();
         spawn_local(async move {
@@ -39,32 +40,13 @@ pub fn App() -> impl IntoView {
             let new_msg = invoke("greet", args).await.as_string().unwrap();
             set_greet_msg.set(new_msg);
         });
-    };
+    };*/
 
     view! {
         <main class="container">
             <h1>"Welcome to Tauri + Leptos"</h1>
-
-            <div class="row">
-                <a href="https://tauri.app" target="_blank">
-                    <img src="public/tauri.svg" class="logo tauri" alt="Tauri logo"/>
-                </a>
-                <a href="https://docs.rs/leptos/" target="_blank">
-                    <img src="public/leptos.svg" class="logo leptos" alt="Leptos logo"/>
-                </a>
-            </div>
             <p>"Click on the Tauri and Leptos logos to learn more."</p>
-
-            <form class="row" on:submit=greet>
-                <input
-                    id="greet-input"
-                    placeholder="Enter a name..."
-                    on:input=update_name
-                />
-                <button type="submit">"Greet"</button>
-            </form>
-            <p>{ move || greet_msg.get() }</p>
-            
+            <button>other</button>
         </main>
     }
 }

@@ -1,27 +1,20 @@
 use leptos::prelude::*;
 use leptos_router::components::Router;
 
-mod app;
-mod other;
-
-use app::*;
-use other::*;
+use crate::app::App;
+use crate::other::Other;
 
 
 /// Documentation for [`Router`]
 #[component]
-pub fn Router() -> impl IntoView {
+pub fn AppRouter() -> impl IntoView {
 
     view! {
         <Router>
-            <nav>
-                /**/
-                <App/>
-                <Other/>
-            </nav>
-            <main>
-                /**/
-            </main>
+            <Routes fallback=|| "Pagina no encontrada.">
+                <Route path="/" view=App/>
+                <Route path="/oher" view=Other/>
+            </Routes>
         </Router>
     }
 }

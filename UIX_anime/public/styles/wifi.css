@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.wifi_title {
+    color: #fff;
+    font-family:ElectroHarmonix, Regular;
+    font-size: 4rem;
+}
+
+.wifi_txt {
+    color: #fff;
+    font-family: ARCADECLASSIC,regular;
+    font-size: 3rem;
+}
+
+
+
+.contenedor{
+    background-color: rgba(15, 9, 42, 0.446);
+}
+
