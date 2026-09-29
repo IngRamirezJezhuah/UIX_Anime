@@ -13,6 +13,11 @@ pub fn Wifi() -> impl IntoView {
             <img src="" alt=""/>
             <p class="wifi_txt">red 1</p>
         </div>
+        <nav class="barra_seleccion">
+            <button class="color_Schema">auto</button>
+            <button class="color_Schema">light</button>
+            <button class="color_Schema">dark</button>
+            </nav>
         </div>
     }
 }

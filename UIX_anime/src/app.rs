@@ -47,6 +47,7 @@ pub fn App() -> impl IntoView {
             <h1>"Welcome to Tauri + Leptos"</h1>
             <p>"Click on the Tauri and Leptos logos to learn more."</p>
             <button>other</button>
+            
         </main>
     }
 }
