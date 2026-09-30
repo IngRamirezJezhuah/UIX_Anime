@@ -1,6 +1,13 @@
 .barra_seleccion{
     background: #3b3b3bac;
     padding: 1rem;
+    /*display: block;
+    padding: 8px 16px;
+    width: 200px;
+    height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10;*/
 }
 
 
@@ -34,4 +41,6 @@ input,
 button {
     outline: none;
 }
+
+
 

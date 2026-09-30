@@ -16,6 +16,7 @@ pub fn Other() -> impl IntoView {
                 <button>Hora e idioma</button>
                 <button>Seguridad</button>
             </nav>
+            
         </div>
     }
 }
