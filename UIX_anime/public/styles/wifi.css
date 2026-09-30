@@ -3,6 +3,13 @@
     margin: 0;
 }
 
+.contenedor{
+    /*background-color: rgba(15, 9, 42, 0.446);*/
+    display: flex;
+    flex-wrap:wrap;
+    gap: 10;
+}
+
 .wifi_title {
     color: #fff;
     font-family:ElectroHarmonix, Regular;
@@ -13,31 +20,4 @@
     color: #fff;
     font-family: ARCADECLASSIC,regular;
     font-size: 3rem;
-}
-
-
-
-.contenedor{
-    background-color: rgba(15, 9, 42, 0.446);
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10;
-}
-
-.color_Schema{
-    background-color: #353535;
-    color: #fff;
-    flex-wrap:wrap;
-}
-
-.grid_grnd{
-    background-color: #4db0ad;
-    /*margin: 2vw;*/
-    padding: 3rem 3rem 3rem 3rem;
-}
-
-.grid_pqñ{
-    background-color: #28d4ce;
-    margin: 2vw;
-    padding: 12vh;
 }

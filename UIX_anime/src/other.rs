@@ -7,7 +7,7 @@ pub fn Other() -> impl IntoView {
 
     view! {
         <div>
-            <p>views</p>
+            //<p>views</p>
             <nav class="barra_seleccion">
                 <button>Sistema</button>
                 <button>Wifi y Bluethoot</button>

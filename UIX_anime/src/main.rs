@@ -2,10 +2,12 @@
 use other::*;
 use leptos::prelude::*;
 use wifi::*;
+use esquema_img::*;
 
 mod wifi;
 mod app;
 mod other;
+mod esquema_img;
 //mod tamborsito;
 
 
@@ -14,9 +16,9 @@ fn main() {
     mount_to_body(|| {
         view! {
             //<App/>
-            
             <Other/>
             <Wifi/>
+            //<Esq_Img/>
             //<tamborsito::route::AppRouter/>
         }
     })
