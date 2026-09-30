@@ -1,7 +1,10 @@
-use leptos::task::spawn_local;
-use leptos::{ev::SubmitEvent, prelude::*};
+use leptos::prelude::*;
+use leptos_router::hooks::use_navigate;
 use serde::{Deserialize, Serialize};
 use wasm_bindgen::prelude::*;
+
+use leptos::task::spawn_local;
+use leptos::{ev::SubmitEvent, prelude::*};
 
 
 #[wasm_bindgen]
@@ -18,35 +21,14 @@ struct GreetArgs<'a> {
 
 #[component]
 pub fn App() -> impl IntoView {
-    /*
-    let (name, set_name) = signal(String::new());
-    let (greet_msg, set_greet_msg) = signal(String::new());
-
-    let update_name = move |ev| {
-        let v = event_target_value(&ev);
-        set_name.set(v);
-    };
-    
-    let greet = move |ev: SubmitEvent| {
-        ev.prevent_default();
-        spawn_local(async move {
-            let name = name.get_untracked();
-            if name.is_empty() {
-                return;
-            }
-
-            let args = serde_wasm_bindgen::to_value(&GreetArgs { name: &name }).unwrap();
-            // Learn more about Tauri commands at https://tauri.app/develop/calling-rust/
-            let new_msg = invoke("greet", args).await.as_string().unwrap();
-            set_greet_msg.set(new_msg);
-        });
-    };*/
+    let navigate = use_navigate();
 
     view! {
         <main class="container">
             <h1>"Welcome to Tauri + Leptos"</h1>
             <p>"Click on the Tauri and Leptos logos to learn more."</p>
-            <button>other</button>
+            //<button>navigate("/wifi", Default::default())</button>
+            <button on:click=move |_| navigate("/wifi", Default::default())>"Ir a otra pantalla"</button>
             
         </main>
     }

@@ -1,25 +1,18 @@
 //use app::*;
 use other::*;
 use leptos::prelude::*;
-use wifi::*;
-use esquema_img::*;
+use tamborsito::*;
 
-mod wifi;
+use crate::tamborsito::route::AppRouter;
+
 mod app;
 mod other;
-mod esquema_img;
-//mod tamborsito;
+mod tamborsito;
+mod componentes;
+
 
 
 fn main() {
     console_error_panic_hook::set_once();
-    mount_to_body(|| {
-        view! {
-            //<App/>
-            <Other/>
-            <Wifi/>
-            //<Esq_Img/>
-            //<tamborsito::route::AppRouter/>
-        }
-    })
+    mount_to_body(|| view! { <AppRouter/> })
 }
