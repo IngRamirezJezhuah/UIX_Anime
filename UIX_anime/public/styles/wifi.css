@@ -21,3 +21,10 @@
     font-family: ARCADECLASSIC,regular;
     font-size: 3rem;
 }
+
+.Texto_titulos{
+    color: #fff;
+    font-family: JetBrainsMono NFP, Thin;
+    font-size: 2rem;
+    text-shadow: rgba(185, 255, 230, 0.864) -1px 1px 23px;
+}

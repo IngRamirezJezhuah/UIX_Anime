@@ -1,23 +1,38 @@
+//other es la barra de busqueda
 use leptos::prelude::*;
 use leptos_router::components::Outlet;
 use leptos_router::hooks::use_navigate;
+use serde::de::value;
 
-
-// Documentation for [`other`]
 #[component]
 pub fn Other() -> impl IntoView {
     let navigate = use_navigate();
 
     view! {
-        <div>
-            //<p>views</p>
+        <div class="contenedor">
             <nav class="barra_seleccion">
-                <button on:click={let value = navigate.clone(); move |_| value("/", Default::default())}>"Sistema"</button>
-                <button on:click={let value = navigate.clone(); move |_| value("wifi", Default::default())}>"Wifi y Bluethoot"</button>
-                <button on:click={let value = navigate.clone(); move |_| value("esquema", Default::default())}>"Apariencia"</button>
-                <button>Teclado/mouse</button>
-                <button>Hora e idioma</button>
-                <button>Seguridad</button>
+                <button class="btn_nav" on:click={let value = navigate.clone(); 
+                move |_| value("/", Default::default())} 
+                >" 󱄫 Inicio"</button>
+                <button class="btn_nav" on:click={let value = navigate.clone();
+                move |_| value("/wifi", Default::default())}>
+                    "󱚾 Red"
+                </button>
+                <button class="btn_nav" on:click={let value = navigate.clone();
+                move |_| value("/esquema_img", Default::default())}>
+                    "󰸌 Apariencia"
+                </button>
+                <button class="btn_nav" on:click={let value = navigate.clone();
+                move |_| value("/perifericos", Default::default())}>
+                    "Preifericos"
+                </button>
+                <button class="btn_nav">
+                    "Hora e idioma"
+                </button>
+                <button class="btn_nav">
+                    "󰒃 Seguridad"
+                </button>
+                
             </nav>
             <Outlet/>
         </div>

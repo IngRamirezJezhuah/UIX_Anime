@@ -1,10 +1,8 @@
 use leptos::prelude::*;
 use leptos_router::hooks::use_navigate;
-use serde::{Deserialize, Serialize};
+
 use wasm_bindgen::prelude::*;
 
-use leptos::task::spawn_local;
-use leptos::{ev::SubmitEvent, prelude::*};
 
 
 #[wasm_bindgen]
@@ -14,10 +12,6 @@ extern "C" {
 }
 
 
-#[derive(Serialize, Deserialize)]
-struct GreetArgs<'a> {
-    name: &'a str,
-}
 
 #[component]
 pub fn App() -> impl IntoView {
@@ -25,8 +19,8 @@ pub fn App() -> impl IntoView {
 
     view! {
         <main class="container">
-            <h1>"Welcome to Tauri + Leptos"</h1>
-            <p>"Click on the Tauri and Leptos logos to learn more."</p>
+            <h1 class="Texto_titulos">"Bienvenidos a las configuraciones Hypr"</h1>
+            <p>"Primeras configuraciones"</p>
             //<button>navigate("/wifi", Default::default())</button>
             <button on:click=move |_| navigate("/wifi", Default::default())>"Ir a otra pantalla"</button>
             
