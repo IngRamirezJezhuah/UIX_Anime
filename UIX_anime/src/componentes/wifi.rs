@@ -7,8 +7,15 @@ pub fn Wifi() -> impl IntoView {
 
     view! {
         <div>
-        <h1 class="wifi_title">Redes disponibles</h1>
-            
+            <p class="wifi_title"> Configuraciones de red</p>
+            <p class="txt_norm"> administra tus redes</p>
+            <div class="contendor">
+                <div class="usercard">
+                    <p class="Texto_titulos">Wifi</p>
+                    <p>redes disponibles</p>
+                </div>
+                <div class="usercard">papaue</div>
+            </div>
         </div>
     }
 }

@@ -26,10 +26,29 @@ pub fn App() -> impl IntoView {
             <div class="container">
                 <div class="usercard">
                     <img class="prf" src="/public/miku_evil.jpg" alt="" />
-                    
+                    <div class="content_card">
                     <p class="user_txt_card">Djxs4n</p>
                     <p class="txt_card">SuperUser</p>
-                    <button>change Avatar</button>
+                    <button class="btn_card">change Avatar</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="usercard">
+                <div class="container">
+                    <p class="txt_norm">Camibo de contraseña</p>
+                    <button class="btn_card">cambio de contraseña sudo</button>
+                    <button class="btn_card">cambio de contraseña de sesion</button>
+                </div>
+            </div>
+            
+            <div class="usercard">
+                <div class="container">
+                <p class="txt_norm">Email preferences</p>
+                    <p class="txt_card"> Google</p>
+                    <p class="txt_card">Gmail</p>
+                    <p class="txt_card">KdeOgr</p>
+                    <p class="txt_card">spotify</p>
                 </div>
             </div>
         </main>
