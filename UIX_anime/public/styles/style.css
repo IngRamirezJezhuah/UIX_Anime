@@ -3,14 +3,6 @@
     margin: 0;
 }
 .barra_seleccion{
-    /*background: #3b3b3bac;*/
-    /*gap: 10;
-    
-    
-    width: 8rem;
-    height: 24rem;
-    
-    */
     padding: 1rem;
     display: flex;
     flex-wrap: wrap;

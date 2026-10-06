@@ -13,7 +13,7 @@ pub fn Other() -> impl IntoView {
             <nav class="barra_seleccion">
                 <button class="btn_nav" on:click={let value = navigate.clone(); 
                 move |_| value("/", Default::default())} 
-                >" 󱄫 Inicio"</button>
+                >" 󱄫 Perfil"</button>
                 <button class="btn_nav" on:click={let value = navigate.clone();
                 move |_| value("/wifi", Default::default())}>
                     "󱚾 Red"

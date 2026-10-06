@@ -14,7 +14,8 @@ serde-wasm-bindgen = "0.6"
 console_error_panic_hook = "0.1.7"
 leptos_router = { version = "0.8" }
 router = "0.6.0"
-
+image = "0.25.10"
+web-sys = { version = "0.3", features = ["Window", "Storage"] }
 
 [workspace]
 members = ["src-tauri"]
