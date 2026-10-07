@@ -3,13 +3,6 @@
     margin: 0;
 }
 
-.contenedor{
-    /*background-color: rgba(15, 9, 42, 0.446);*/
-    display: flex;
-    flex-wrap:wrap;
-    gap: 10;
-}
-
 .wifi_title {
     color: #fff;
     font-family:ElectroHarmonix, Regular;
@@ -36,5 +29,7 @@
     text-shadow: rgba(185, 255, 230, 0.864) -1px 1px 23px;
 }
 
-
+.card{
+    background: #3e3030;
+}
 

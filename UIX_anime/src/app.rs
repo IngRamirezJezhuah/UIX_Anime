@@ -18,24 +18,24 @@ pub fn App() -> impl IntoView {
     let navigate = use_navigate();
 
     view! {
-        <main class="container">
+        <main>
             <h1 class="Texto_titulos">"User Account"</h1>
             <p class="txt_norm">"Modifica tu perfil y preferencias"</p>
             //<button>navigate("/wifi", Default::default())</button>
             //<button on:click=move |_| navigate("/wifi", Default::default())>"Ir a otra pantalla"</button>
-            <div class="container">
+            <div>
                 <div class="usercard">
                     <img class="prf" src="/public/miku_evil.jpg" alt="" />
                     <div class="content_card">
-                    <p class="user_txt_card">Djxs4n</p>
-                    <p class="txt_card">SuperUser</p>
-                    <button class="btn_card">change Avatar</button>
+                        <p class="user_txt_card">Djxs4n</p>
+                        <p class="txt_card">SuperUser</p>
+                        <button class="btn_card">change Avatar</button>
                     </div>
                 </div>
             </div>
             
             <div class="usercard">
-                <div class="container">
+                <div>
                     <p class="txt_norm">Camibo de contraseña</p>
                     <button class="btn_card">cambio de contraseña sudo</button>
                     <button class="btn_card">cambio de contraseña de sesion</button>
@@ -43,7 +43,7 @@ pub fn App() -> impl IntoView {
             </div>
             
             <div class="usercard">
-                <div class="container">
+                <div>
                 <p class="txt_norm">Email preferences</p>
                     <p class="txt_card"> Google</p>
                     <p class="txt_card">Gmail</p>

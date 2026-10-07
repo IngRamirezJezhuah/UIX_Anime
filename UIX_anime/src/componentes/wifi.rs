@@ -9,10 +9,13 @@ pub fn Wifi() -> impl IntoView {
         <div>
             <p class="wifi_title"> Configuraciones de red</p>
             <p class="txt_norm"> administra tus redes</p>
-            <div class="contendor">
-                <div class="usercard">
+            <div>
+                <div class="card">
                     <p class="Texto_titulos">Wifi</p>
-                    <p>redes disponibles</p>
+                    <p class="txt_norm">redes disponibles</p>
+                    <div class="switch-wrapper">
+                        <input  type="checkbox" />
+                    </div>
                 </div>
                 <div class="usercard">papaue</div>
             </div>

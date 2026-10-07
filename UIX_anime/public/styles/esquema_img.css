@@ -3,12 +3,7 @@
     padding: 0;
 }
 
-.contenedor{
-    /*background-color: rgba(15, 9, 42, 0.446);*/
-    display: flex;
-    flex-wrap:wrap;
-    gap: 10;
-}
+
 
 .color_Schema{
     background-color: #392f423e;
