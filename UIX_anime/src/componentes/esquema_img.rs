@@ -7,7 +7,7 @@ pub fn Esq_Img() -> impl IntoView {
 
     view! {
         <div>
-        <h1 class="wifi_title">Esquema Img</h1>
+        <h1 class="Texto_titulos">Esquema Img</h1>
             <div /*class="color_Schema"*/>
                 <img src="" alt=""/>
                 <div>

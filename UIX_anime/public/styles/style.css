@@ -12,6 +12,29 @@
     position: relative;
 }
 
+.btn_nav {
+    cursor: pointer;
+    font-size: 10px;
+    font-family: JetBrainsMono NFP, Thin;
+    font-weight: normal;
+    height: 2.5rem;
+    width: 8.5rem;
+    color: #111827;
+    background-color: transparent;
+    padding:10px 20px 10px 20px ;
+    border-radius:8px 8px 8px 8px;
+    border:2px solid #111827;
+    transition: all 0.2s ease-in;
+}
+
+.btn_nav:hover {
+    color: #ffffff;
+    background-color: #18243c;
+    transition: all 0.2s ease-out;
+}
+
+
+/*
 .btn_nav{
     height: 2.5rem;
     width: 8rem;
@@ -38,7 +61,7 @@
     background-color: #e3bbdd;
     box-shadow: 0px 20px 44px -14px rgba(3, 7, 18, 0.98), 0px 0px 30px 0px #da7979;
     transition: all 0.2s ease-out;
-}
+}*/
 
 .contenedor{
     /*background-color: rgba(15, 9, 42, 0.446);*/

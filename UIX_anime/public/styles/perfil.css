@@ -9,7 +9,7 @@
 
 .usercard {
     /*border-color: 2px solid #4d4c4ca5;*/
-    background-color: #797979a5;
+    background-color: #5e606b;
     border-radius: 1rem;
     display: flex;
     margin: 1rem;
@@ -36,6 +36,12 @@
     padding: .4rem;
     height: auto;
     margin: auto;
+    transition: all 0.2s ease-in;
+}
+
+.btn_card:hover{
+    background: #3c3a3aa5;
+    transition: all 0.3s ease-out;
 }
 
 .content_card{
