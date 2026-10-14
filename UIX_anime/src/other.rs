@@ -26,10 +26,12 @@ pub fn Other() -> impl IntoView {
                 move |_| value("/perifericos", Default::default())}>
                     "Preifericos"
                 </button>
-                <button class="btn_nav">
+                <button class="btn_nav" on:click={let value = navigate.clone(); 
+                move |_| value("/hrs_idm", Default::default())}>
                     "Hora e idioma"
                 </button>
-                <button class="btn_nav">
+                <button class="btn_nav" on:click={let value = navigate.clone();
+                move |_| value("/seguridad", Default::default())}>
                     "󰒃 Seguridad"
                 </button>
                 

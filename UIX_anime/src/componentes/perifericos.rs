@@ -19,7 +19,7 @@ pub fn Perifericos() -> impl IntoView {
             <section class="palette" id="palette" popover>
                 <search class="palette_search">
                     <svg viewbox="0 0 24 24"><circle cx="11" cy="11" r="7" /><path d="m20-3.5-3.5"/></svg>
-                    <input type="search" autofocus placeholder="Escribe un comando o busca..."/>
+                    <input type="search" autofocus placeholder="Escribecd u un comando o busca..."/>
                     <kbd>esc</kbd>
                 </search>
 
