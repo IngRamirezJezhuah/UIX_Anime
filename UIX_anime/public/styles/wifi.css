@@ -30,6 +30,34 @@
 }
 
 .card{
-    background: #3e3030;
+    background-color: #5e606b;
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flexbox;
+    grid: 10;
+    margin: 1rem;
 }
 
+.cardcontainer{
+    padding: 1rem;
+    display: flex;
+    grid: 10;
+    margin: 1rem;
+}
+
+.input_stule{
+    background: #236963;
+
+}
+
+.list{
+    background: #6b74a875;
+    border-radius: 2rem;
+    padding: 5px;
+    display: flex;
+    align-items: center2;
+}
+
+.list:hover{
+    background: #badc6c;
+}

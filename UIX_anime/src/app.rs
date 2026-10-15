@@ -37,8 +37,8 @@ pub fn App() -> impl IntoView {
             <div class="usercard">
                 <div>
                     <p class="txt_norm">Camibo de contraseña</p>
-                    <button class="btn_card">cambio de contraseña sudo</button>
-                    <button class="btn_card">cambio de contraseña de sesion</button>
+                    <button class="btn_card">cambio pass sudo</button>
+                    <button class="btn_card">cambio pass de sesion</button>
                 </div>
             </div>
             
